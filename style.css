@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+span{
+  color: red;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; 
+}
+.main {
+  flex-grow: 1;
+}
+.nav {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34495e;
+  color: white;
+  border-radius: 10px;
+}
+
+.nav--logo {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  font-family: cursive;
+}
+
+.navbar-links {
+  height: 100%;
+}
+  
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+.footer-container {
+  background-color: #34495e;
+  margin-bottom: 0;
+  position: a;
+  bottom: 0;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #34495e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: cursive;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+
+.footer-heading h3 {
+  margin-bottom: 0.7rem;
+}
+
+.footer-heading ul {
+  list-style-type: none;
+  color: white;
+}
+
+.footer-heading a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-heading a:hover {
+  color: red;
+  transition: 0.3;
+}
+
+.copyright {
+  color: white;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer {
+    height: 50vh;
+    margin-bottom: 0;
+  }
+  
+}
+@media screen and (max-width: 520px) {
+  .footer-3 {
+    display: none;
+  }
+}
+
+input[type=text], input[type=password]{
+  width: 500px;
+  padding: 15px;
+  margin: 5px 0 22px 30px;
+  display: block;
+  border: none;
+  background: aliceblue;
+  border: 1px solid black;
+  border-radius: 10px;
+} 
+
+ button {
+  background-color: #34495e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  opacity: 0.9; 
+}
+
+button:hover{
+  background-color: #555;
+}
+
+img{
+    width: 100% !important;
+}
+
+@media screen and (max-width: 800px){
+  input[type=text], input[type=password]{
+    width: 75%;
+  }
+  button {
+    margin-left: 30px;
+  }
+} 
+

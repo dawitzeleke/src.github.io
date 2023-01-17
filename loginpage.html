@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="login.css" type="text/css">
+    
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav--logo">TRAVEL <span> INFO</span></div>
+      <a href="#" class="button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="tourguides.html">Tourguides</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="aboutuspage.html">About Us</a></li>
+          <li><a href="contactpage.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main" class="login-cont">
+      <div class= "container" id="login">
+          <h2 calss="label">login</h2>
+        <form action="homepage.html">
+              <label for="email">Email</label>
+              <input id="Email" name="email" type="text" />
+              <label for="password">Password</label>
+              <input id="password" type="password" />
+            <a href=""><button onclick="return validation()" type="submit">Signin</button></a>
+        </form>
+        <p> Don't have account? <a href="signuppage.html" id="login-signup">Signup</a> </p>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-container">
+    <div class="footer">
+      <div class="footer-heading footer-1">
+        <h3>Contact</h3>
+        <dl>
+          <dt>phone:</dt>
+          <dd>+251962235740</dd>
+          <dt>email:</dt>
+          <dd>dawitzeleke92@gmail.com</dd>
+        </dl>
+      </div>
+
+      <div class="footer-heading footer-2">
+        <h3>Social link</h3>
+        <ul>
+          <li> <a href=""><i class="fab fa-twitter"> </i>Twitter</a> </li>
+          <li> <a href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li> <a href=""><i class="fab fa-instagram"></i> Instagram</a> </li>
+      </ul>
+      </div>
+      <div class="footer-heading footer-3">
+        <h3>Address</h3>
+        <ul>
+          <li>Addis Ababa,Ethiopia</li>
+        </ul>
+      </div>
+      <div class="copyright">©2022 Dawit ETH,Inc. All rights reserved.</div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>

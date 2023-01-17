@@ -1,0 +1,36 @@
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: large;
+  padding: 4px 4px 4px 4px;
+}
+table.tab {
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-contact {
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 10px;
+  column-gap: 50px;
+}
+
+.container-contact h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1000px) {
+   .container-contact{ 
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: auto;
+   }
+   table,th, td{
+    font-size: medium;
+   }
+}

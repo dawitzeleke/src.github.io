@@ -1,0 +1,55 @@
+
+#login h2{
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+#login{
+  width: 100%;
+}
+#login{
+  display: grid;
+  background-color: #F2EDEB;
+ }
+.main {
+    flex-grow: 1;
+  }
+#login h2{
+    text-align: center;
+  }
+  #login{
+    height: auto;
+    margin: 0 auto;
+  }
+    
+  #login a{
+    text-decoration: none;
+  } 
+  .container{
+    position: relative;
+    margin-top: 100px;
+    width: 450px;
+    height: auto;
+    border-radius: 5px solid black;
+  }
+  .label{
+    padding: 20px 130px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  form{
+    place-self:center;
+   }
+a{
+    place-self: center;
+   }
+@media screen and (max-width:800px){
+    input[type=text], input[type=password]{
+        padding: 12px;
+        width: 300px
+    }
+    button{
+        padding: 10px ;
+    }
+   }
