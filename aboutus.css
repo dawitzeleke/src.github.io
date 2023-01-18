@@ -1,0 +1,33 @@
+.container-about{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* column-gaps: 5px; */
+    margin: 10px;
+  column-gap: 50px;
+  background-color: #F2EDEB;
+}
+  
+  #aboutus--p{
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  #aboutus--img{
+    border-radius: 10px;
+  }
+  @media only screen and (max-width:1000px){
+    .container-about{
+        display: grid;
+        grid-template-rows:1fr 1fr;
+        grid-template-columns: auto;
+        font-size: 20px;
+    }
+    #aboutus--p{
+        order: 2;
+        font-size: 17px;
+    }
+    #aboutus--img{
+        order: 1;
+        border-radius: 5px;
+    }
+  }
