@@ -5,37 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinations</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="destination.css" type="text/css" />
-  </head>
-  <body>
-    <nav class="nav">
-      <div class="nav--logo">TRAVEL <span> INFO</span></div>
-      <a href="#" class="button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="homepage.html">Home</a></li>
-          <li><a href="tourguides.html">Tourguides</a></li>
-          <li><a href="destination.html">Destinations</a></li>
-          <li><a href="aboutuspage.html">About Us</a></li>
-          <li><a href="contactpage.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="main" id="main-destination">
-      <video controls>
-        <source src="Ethiopia Unforgettable Adventures.mp4" type="video/mp4" />
-      </video>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-      <h2>Destinations</h2>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="custom.css">
+    <style>
+      img{
+    width: 100% !important;
+       }
+    
+    </style>
+  </head>
+  <body class="d-flex flex-column min-vh-100 container-fluid">
+    
+      <nav class="navbar navbar-expand-lg navbar-dark  bg-custom custom-text-color container-fluid">
+        <div class="container">
+  
+          <div class="navbar-brand float-left font-weight-bold  h1 mr-auto logo-text" >TRAVEL <span class="text-red"> INFO</span></div>
+  
+          <button class=" btn btn-light navbar-toggler ml-auto bg-custom float-right " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item text-white"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item text-white "><a class="nav-link" href="tourguides.html">Tourguides</a></li>
+            <li class="nav-item text-white"><a class="nav-link" href="destination.html">Destinations</a></li>
+            <li class="nav-item text-white"><a class="nav-link" href="aboutuspage.html">About Us</a></li>
+            <li class="nav-item text-white"><a class="nav-link" href="contactpage.html">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    <div class= "container-fluid">
+      
+      <div class="embed-responsive embed-responsive-16by9">
+        <video class="embed-responsive-item" controls>
+          <source src="Ethiopia Unforgettable Adventures.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <h2 class="text-center text-red">Destinations</h2>
       <p>
         With the most UNESCO World Heritage Sites than any other African country
         (including Egypt), Ethiopia is a hidden gem that is overlooked by many
@@ -45,11 +61,12 @@
         we have pulled together what we think are the best places to visit in
         Ethiopia. So, let us jump into it.
       </p>
-      <div class="containr">
-        <div class="imggrid__item">
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex align-items-center img--d">
           <img src="addisabeba.jpeg" alt="Addis ababa" />
         </div>
-        <div class="grid__item">
+       
+        <div class="col-12 col-md-6 d-flex align-items-center">
           <dl>
             <dt class="header">Addis Ababa</dt>
             <dd >
@@ -89,10 +106,10 @@
             </section>
         </div>
       </div>
-        <div class="containr">
-          <div class="grid__item">
-            <dt class="header">Arba Minch</dt>
-            <dd>
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <h3 class="header">Arba Minch</h3> <br>
+            <p>
               With stunning views in all directions, the town of Arba Minch is
               situated in a truly spectacular location. It lies at an elevation
               of 1,300m in the foothills of the Rift Valley and mountains rise
@@ -100,18 +117,18 @@
               settlements, Sikela and Shecha that are 4 km apart and connected
               by a sealed road, so although the total population is around the
               75,000 marks it still retains a small-town atmosphere.
-            </dd>
+            </p>
           </div>
-          <div class="imggrid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="arbaminchjpg.jpg" alt="Arba Minch" />
           </div>
         </div>
 
-        <div class="containr">
-          <div class="imggrid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Awash National Park.jpeg" alt="Awash National Park" />
           </div>
-          <div class="grid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center">
             <dt class="header">Awash National Park</dt>
               <dd>
                 This scenic national park is situated in the dry acacia savanna of the
@@ -126,8 +143,8 @@
           </div>
         </div>
 
-        <div class="containr">
-          <div class="grid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center">
             <dt class="header">Axum</dt>
           <dd>
             This fascinating town was the centre of the Axumite Empire, one of the
@@ -142,16 +159,16 @@
             be seen and as yet still undiscovered.
           </dd>
           </div>
-          <div class="imggrid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Axum.jpeg" alt="Axum Monument" />
           </div>
         </div>
 
-        <div class="containr">
-          <div class="imggrid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Lalibela.jpeg" alt="Lalibela" />
           </div>
-         <div class="grid__item">
+         <div class="col-12 col-md-6 d-flex align-items-center">
           <dt class="header">Lalibela</dt>
           <dd>
            
@@ -168,8 +185,8 @@
          </div>
         </div>
 
-        <div class="containr">
-          <div class="grid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center">
             <dt class="header">Jinka</dt>
             <dd>
               Although Jinka is the administrative capital of the South Omo zone it
@@ -178,16 +195,16 @@
               and its Saturday market attracts traders from all over the area.
             </dd>
           </div>
-          <div class="imggrid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Jinka.jpeg" alt="Jinka" />
           </div>
         </div>
 
-        <div class="containr">
-          <div class="imggrid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Langano.jpeg" alt="Langano" />
           </div>
-          <div class="grid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center">
             <dt class="header">Langano</dt>
           <dd>
             Of all the Rift Valley lakes, Lake Langano is the most developed for
@@ -202,8 +219,8 @@
           </div>
         </div>
 
-        <div class="containr">
-          <div class="grid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center">
             <dt class="header">Bahir Dar</dt>
           <dd>
             
@@ -213,19 +230,19 @@
             the lake and surrounding area, which includes the blue nile falls. 
           </dd>
           </div>
-          <div class="imggrid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Bahir Dar.jpeg" alt="Nile River" />
           </div>
         </div>
         
-        <div class="containr">
-          <div class="imggrid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img
-              src="Bale Mountains National Park.jpeg"
+              clas src="Bale Mountains National Park.jpeg"
               alt="Bale Mountains National Park"
             />
           </div>
-          <div class="grid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center">
             <dt class="header">Bale Mountains National Park</dt>
           <dd>
             
@@ -238,8 +255,8 @@
           </div>
         </div>
 
-       <div class="containr">
-        <div class="grid__item">
+       <div class="row">
+        <div class="col-12 col-md-6 d-flex align-items-center">
           <dt class="header">Simien Mountains</dt>
           <dd>
             
@@ -249,16 +266,16 @@
             valleys, they are also among the most spectacular. 
           </dd>
          </div>
-          <div class="imggrid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Simien Mountains.jpeg" alt="Simien Mountains" />
           </div>
        </div>
 
-        <div class="containr">
-          <div class="imggrid__item">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center img--d">
             <img src="Mekele.jpeg" alt="Mekele" />
           </div>
-          <div class="grid__item">
+          <div class="col-12 col-md-6 d-flex align-items-center">
             <dt class="header">Mekele</dt>
           <dd>
             
@@ -273,45 +290,53 @@
           </div>
         </div>
 
-      <button title="Back to top">Top</button>
-      <a href="tourguides.html"><button>Back</button></a>
-      <a href="aboutuspage.html"><button>Next</button></a>
+      <button title="Back to top" class="btn btn-custom">Top</button>
+      <a href="tourguides.html"><button class="btn btn-custom">Back</button></a>
+      <a href="aboutuspage.html"><button class="btn btn-custom">Next</button></a>
     </div>
-    <div class="footer-container">
-      <div class="footer">
-        <div class="footer-heading footer-1">
-          <h3>Contact</h3>
-          <dl>
-            <dt>phone:</dt>
-            <dd>+251962235740</dd>
-            <dt>email:</dt>
-            <dd>dawitzeleke92@gmail.com</dd>
-          </dl>
-        </div>
-
-        <div class="footer-heading footer-2">
-          <h3>Social link</h3>
-          <ul>
-            <li>
-              <a href=""><i class="fab fa-twitter"> </i>Twitter</a>
-            </li>
-            <li>
-              <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
-            </li>
-            <li>
-              <a href=""><i class="fab fa-instagram"></i> Instagram</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-heading footer-3">
-          <h3>Address</h3>
-          <ul>
-            <li>Addis Ababa,Ethiopia</li>
-          </ul>
-        </div>
-        <div class="copyright">©2022 Dawit ETH,Inc. All rights reserved.</div>
+    <footer class="footer bg-custom custom-text-color mt-auto container-fluid">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4">
+                  <div class="contact">
+                      <h5>Contact</h5>
+                      <dl>
+                        <dt>phone:</dt>
+                        <dd>+251962235740</dd>
+                        <dt>email:</dt>
+                        <dd>dawitzeleke92@gmail.com</dd>
+                      </dl>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="social-links">
+                      <h5>Social Links</h5>
+                      <ul>
+                        <li class="no-decoration">
+                          <a href=""><i class="fab fa-twitter"> </i>Twitter</a>
+                        </li>
+                        <li class="no-decoration">
+                          <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                        </li>
+                        <li class="no-decoration">
+                          <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="address">
+                      <h5>Address</h5>
+                      <ul>
+                        <li>Addis Ababa,Ethiopia</li>
+                      </ul>
+                  </div>
+                  
+              </div>
+              <div class="copyright">©2022 Dawit ETH,Inc. All rights reserved.</div>
+          </div>
       </div>
-    </div>
+  </footer>
     <script src="script.js"></script>
   </body>
 </html>

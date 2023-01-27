@@ -5,28 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="contactus.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="custom.css">
   </head>
-  <body>
-    <nav class="nav">
-      <div class="nav--logo">TRAVEL <span> INFO</span></div>
-      <a href="#" class="button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="homepage.html">Home</a></li>
-          <li><a href="tourguides.html">Tourguides</a></li>
-          <li><a href="destination.html">Destinations</a></li>
-          <li><a href="aboutuspage.html">About Us</a></li>
-          <li><a href="contactpage.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+  <body class="d-flex flex-column min-vh-100">
+    
+      <nav class="navbar navbar-expand-lg navbar-dark  bg-custom custom-text-color">
+        <div class="container">
+  
+          <div class="navbar-brand float-left font-weight-bold  h1 mr-auto logo-text" >TRAVEL <span class="text-red"> INFO</span></div>
+  
+          <button class=" btn btn-light navbar-toggler ml-auto bg-custom float-right " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item text-white"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item text-white "><a class="nav-link" href="tourguides.html">Tourguides</a></li>
+            <li class="nav-item text-white"><a class="nav-link" href="destination.html">Destinations</a></li>
+            <li class="nav-item text-white"><a class="nav-link" href="aboutuspage.html">About Us</a></li>
+            <li class="nav-item text-white"><a class="nav-link" href="contactpage.html">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
     <div class="main" id="contact--main">
       <div class="container-contact">
         <div class="container--contact--table">
@@ -64,38 +76,51 @@
     </div>
     </div> 
     <a href="aboutuspage.html"><button>Back</button></a>
-      
   </div>
 
-  <div class="footer-container">
-    <div class="footer">
-      <div class="footer-heading footer-1">
-        <h3>Contact</h3>
-        <dl>
-          <dt>phone:</dt>
-          <dd>+251962235740</dd>
-          <dt>email:</dt>
-          <dd>dawitzeleke92@gmail.com</dd>
-        </dl>
-      </div>
-
-      <div class="footer-heading footer-2">
-        <h3>Social link</h3>
-        <ul>
-          <li> <a href=""><i class="fab fa-twitter"> </i>Twitter</a> </li>
-          <li> <a href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
-          <li> <a href=""><i class="fab fa-instagram"></i> Instagram</a> </li>
-      </ul>
-      </div>
-      <div class="footer-heading footer-3">
-        <h3>Address</h3>
-        <ul>
-          <li>Addis Ababa,Ethiopia</li>
-        </ul>
-      </div>
-      <div class="copyright">©2022 Dawit ETH,Inc. All rights reserved.</div>
+  <footer class="footer bg-custom custom-text-color mt-auto">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="contact">
+                    <h5>Contact</h5>
+                    <dl>
+                      <dt>phone:</dt>
+                      <dd>+251962235740</dd>
+                      <dt>email:</dt>
+                      <dd>dawitzeleke92@gmail.com</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="social-links">
+                    <h5>Social Links</h5>
+                    <ul>
+                      <li class="no-decoration">
+                        <a href=""><i class="fab fa-twitter"> </i>Twitter</a>
+                      </li>
+                      <li class="no-decoration">
+                        <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                      </li>
+                      <li class="no-decoration">
+                        <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="address">
+                    <h5>Address</h5>
+                    <ul>
+                      <li>Addis Ababa,Ethiopia</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="copyright">©2022 Dawit ETH,Inc. All rights reserved.</div>
+        </div>
     </div>
-  </div>
+</footer>
     
     <script src="script.js"></script>
   </body>

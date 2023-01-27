@@ -5,105 +5,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="custom.css">
   </head>
-  <body>
-    <nav class="nav">
-      <div class="nav--logo">TRAVEL <span> INFO</span></div>
-      <a href="#" class="button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="homepage.html">Home</a></li>
-          <li><a href="tourguides.html">Tourguides</a></li>
-          <li><a href="destination.html">Destinations</a></li>
-          <li><a href="aboutuspage.html">About Us</a></li>
-          <li><a href="contactpage.html">Contact</a></li>
+  <body class="d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-custom custom-text-color">
+      <div class="container">
+
+        <div class="navbar-brand float-left font-weight-bold  h1 mr-auto logo-text" >TRAVEL <span class="text-red"> INFO</span></div>
+
+        <button class=" btn btn-light navbar-toggler ml-auto bg-custom float-right " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-white"><a class="nav-link" href="homepage.html">Home</a></li>
+          <li class="nav-item text-white "><a class="nav-link" href="tourguides.html">Tourguides</a></li>
+          <li class="nav-item text-white"><a class="nav-link" href="destination.html">Destinations</a></li>
+          <li class="nav-item text-white"><a class="nav-link" href="aboutuspage.html">About Us</a></li>
+          <li class="nav-item text-white"><a class="nav-link" href="contactpage.html">Contact</a></li>
         </ul>
       </div>
+      </div>
     </nav>
+
     <div class="main">
-      <div class="cont">
+      <div class="image-container d-flex align-items-center justify-content-center">
         <img
-          src="Ethiopia-landscape-3.jpg"
-          alt="Ethiopian beautiful landscape"
+           src="Ethiopia-landscape-3.jpg"
+          alt="Ethiopian beautiful landscape" class="img-fluid"
         />
-
-        <div class="login"><a href="loginpage.html">Login</a></div>
-        <div class="signup"><a href="signuppage.html">Signup</a></div>
-        <div class="home-headline">
-          <p>FIND INFORMATION ABOUT THE PLACE YOU WANT TO VISIT</p>
+        <div class="image-text text-center">
+          <p class="text-black">FIND INFORMATION ABOUT THE PLACE YOU WANT TO VISIT</p>
+          <div class="ml-auto">
+            <a href="loginpage.html" class="btn btn-custom mr-2">Login</a>
+            <a href="signuppage.html" class="btn btn-custom">Signup</a>
+        </div>
         </div>
       </div>
+      </div>
+
       <div class="par">
-        <h2 id="home--h2">Welcome to our Website</h2>
-        <p class="home-paragraph">
-          In this Website, you will find information about the places you want
-          to visit here in ethiopia.Ethiopia is an ancient country whose unique
-          cultural heritage, rich history and remarkable biodiversity are
-          reflected in a tally of nine UNESCO World Heritage Sites – more than
-          any other country in Africa. Within its borders, you’ll find the
-          world’s fourth-holiest Islamic city, along with the oldest
-          continuously-occupied town south of the Sahara. Compelling antiquities
-          include the medieval rock-hewn churches of Lalibela and Gheralta,
-          palaces and temples dating back 3,000 years, the magnificent 17th
-          century castles of Gondar, and the oldest human fossils unearthed
-          anywhere on the planet. Add to this the beautiful Simien and Bale
-          Mountains, the spectacular volcanic landscapes of the Danakil
-          Depression, and a wealth of mammals and birds found nowhere else in
-          the world, and it’s little wonder that Ethiopia has become the most
-          attractive and popular emergent tourist destination in Africa.
-        </p>
+        <h2 class="display-2 text-center text-red display-4  d-sm-block" class="h2 text-sm-xl">Welcome to our Website</h2>
+        <div class="text-center">
+          <p class="text-wrap font-responsive">
+            In this Website, you will find information about the places you want
+            to visit here in ethiopia.Ethiopia is an ancient country whose unique
+            cultural heritage, rich history and remarkable biodiversity are
+            reflected in a tally of nine UNESCO World Heritage Sites – more than
+            any other country in Africa. Within its borders, you’ll find the
+            world’s fourth-holiest Islamic city, along with the oldest
+            continuously-occupied town south of the Sahara. Compelling antiquities
+            include the medieval rock-hewn churches of Lalibela and Gheralta,
+            palaces and temples dating back 3,000 years, the magnificent 17th
+            century castles of Gondar, and the oldest human fossils unearthed
+            anywhere on the planet. Add to this the beautiful Simien and Bale
+            Mountains, the spectacular volcanic landscapes of the Danakil
+            Depression, and a wealth of mammals and birds found nowhere else in
+            the world, and it’s little wonder that Ethiopia has become the most
+            attractive and popular emergent tourist destination in Africa.
+          </p>
+        </div>
+        
       </div>
-      <a href="tourguides.html"><button>Next</button></a>
+      <a href="tourguides.html"><button class="btn btn-custom">Next</button></a>
     </div>
-    <div class="footer-container">
-      <div class="footer">
-        <div class="footer-heading footer-1">
-          <h3>Contact</h3>
-          <dl>
-            <dt>phone:</dt>
-            <dd>+251962235740</dd>
-            <dt>email:</dt>
-            <dd>dawitzeleke92@gmail.com</dd>
-          </dl>
-        </div>
-
-        <div class="footer-heading footer-2">
-          <h3>Social link</h3>
-          <ul>
-            <li>
-              <a href=""><i class="fab fa-twitter"> </i>Twitter</a>
-            </li>
-            <li>
-              <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
-            </li>
-            <li>
-              <a href=""><i class="fab fa-instagram"></i> Instagram</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-heading footer-3">
-          <h3>Address</h3>
-          <ul>
-            <li>Addis Ababa,Ethiopia</li>
-          </ul>
-        </div>
-        <div class="copyright">©2022 Dawit ETH,Inc. All rights reserved.</div>
+    <footer class="bg-custom custom-text-color footer mt-auto py-3">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4">
+                  <div class="contact">
+                      <h5>Contact</h5>
+                      <dl>
+                        <dt>phone:</dt>
+                        <dd>+251962235740</dd>
+                        <dt>email:</dt>
+                        <dd>dawitzeleke92@gmail.com</dd>
+                      </dl>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="social-links">
+                      <h5>Social Links</h5>
+                      <ul>
+                        <li class="no-decoration">
+                          <a href=""><i class="fab fa-twitter"> </i>Twitter</a>
+                        </li>
+                        <li class="no-decoration">
+                          <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
+                        </li>
+                        <li class="no-decoration">
+                          <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="col-sm-4">
+                  <div class="address">
+                      <h5>Address</h5>
+                      <ul>
+                        <li>Addis Ababa,Ethiopia</li>
+                      </ul>
+                  </div>
+                  
+              </div>
+              <div class="copyright">©2022 Dawit ETH,Inc. All rights reserved.</div>
+          </div>
       </div>
-    </div>
+  </footer>
     <script src="script.js"></script>
   </body>
 </html>
