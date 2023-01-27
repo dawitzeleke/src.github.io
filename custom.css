@@ -1,5 +1,6 @@
 body{
     width: 100%;
+    margin-right: 0px;
 }
 .bg-custom {
     background-color: #34495e;
@@ -32,18 +33,20 @@ ul{
 .btn-custom {
     background-color: #34495e;
     color: white;
+    margin-top: 10px;
 }
 .text-red{
     color: red;
 }
 .form-color{
-    background-color: aliceblue;
+    background-color: #F2EDEB;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .bg-par{
-    background-color: aliceblue;
-}
+    background-color: #F2EDEB;
+};
+
 .row{
     margin: 0 0;
 }
@@ -55,3 +58,23 @@ ul{
         order: 2;
     }
 }
+@media screen and(max-width:500px){
+    #btn{
+        font-size: smaller;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+       }
+}
+.row-dest{
+    background-color: #F2EDEB;
+    margin-top: 20px;
+}
+.grid-dest{
+    background-color: aliceblue;
+}
+
+

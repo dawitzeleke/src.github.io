@@ -16,8 +16,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="custom.css">
     <style>
-      p{
-        pa;
+      #aboutus_image{
+        width: 100% !important;
+       
+      }
+      
+      .aboutus{
+        background-color: #F2EDEB;
+        margin-top: 50px;
+
+      }
+      .button{
+        margin-top: 130px;
+        
+      }
+      @media screen and (min-width){
+        #aboutus_image{
+          order: 1;
+        }
       }
     </style>
   </head>
@@ -44,35 +60,39 @@
         </div>
       </nav>
   
-      <div class="row" class="main">
-        <div class="col-6">
-          
-            <img
-              id="aboutus_image"
-              src="index.jpg"
-              alt="A beautiful landscape in Ethiopia"
-            />
+      <div class="container aboutus">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            
+              <img
+                id="aboutus_image"
+                src="index.jpg"
+                alt="A beautiful landscape in Ethiopia"
+              />
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <h2 class="text-md font-weight-light ">About Us</h2>
+              <p>
+                Hey, I am Dawit, third year software engineering student at Addis
+                Ababa University and this website is dedicated to people from around
+                the world who are really interested in visiting Ethiopia but haven't
+                quite find enough information about the places they might visit and
+                institutions who can help them in their journey. You will find here
+                almost everything that is necessary for to start your adventure. Our
+                aim is to promote Ethiopia's diverse culture and help people have
+                positive to our country.
+              </p>
+            </div>
           </div>
-          <div class="col-6">
-            <h2>About Us</h2>
-            <p>
-              Hey, I am Dawit, third year software engineering student at Addis
-              Ababa University and this website is dedicated to people from around
-              the world who are really interested in visiting Ethiopia but haven't
-              quite find enough information about the places they might visit and
-              institutions who can help them in their journey. You will find here
-              almost everything that is necessary for to start your adventure. Our
-              aim is to promote Ethiopia's diverse culture and help people have
-              positive to our country.
-            </p>
-          </div>
+      </div>
 
-          <a href="destination.html"><button class="btn btn-custom">Back</button></a>
-          <a href="contactpage.html"><button class="btn btn-custom">Next</button></a>
-        </div>
+
+
+      <div class="button">
+        <a href="destination.html"><button class="btn btn-custom float-leftd-inline-block mr-2">Back</button></a>
+        <a href="contactpage.html"><button class="btn btn-custom d-inline-block">Next</button></a>
+      </div>
        
-      
-    </div>
 
     <footer class="footer bg-custom custom-text-color mt-auto">
       <div class="container">
